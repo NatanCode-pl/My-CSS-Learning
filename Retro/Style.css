@@ -1,0 +1,387 @@
+body {
+  background-color: #0b0214;
+    /* Nakładamy na siebie dwie warstwy: na górze liniowy gradient (od przezroczystego do brązu), a POD NIM Twoje zdjęcie kawy */
+    background-image: 
+        linear-gradient(to bottom, rgba(11, 2, 20, 0) 0%, rgba(11, 2, 20, 1) 85%),
+        url("neon-city-futuristic-city-cyber-city-cyberpunk-cityscape-5k-2560x1440-8801.jpg");
+
+    /* KLUCZ DO EFEKTU: Obrazek stoi sztywno w miejscu, a strona (teksty) przesuwa się nad nim */
+    background-attachment: scroll, fixed; 
+
+    /* Standardowe combo, żeby zdjęcie ładnie pokryło ekran i się nie powtarzało */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    /* Dajemy dużą wysokość strony, żebyś na pewno miał co scrollować i zobaczył efekt */
+    min-height: 150vh; 
+    font-family:'Press Start 2P',cursive;
+}
+header{
+    position: relative;
+    padding: 30px 0;
+}
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index:1000;
+    width: 60px
+    height: auto;
+    mix-blend-mode: multiply;
+
+}
+hr {
+    border: 1px dotted #430a85;
+    margin: 50px;
+
+}
+
+h1  {
+    color: #1195c9;
+    text-align: center;
+    font-size: 50px;
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+        animation: flicker 1.5s infinite alternate;
+        text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    color: #8f0d79; /* główny kolor neonu (różowy) */
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff;
+        animation: flicker 1.5s infinite alternate;
+        text-align: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav ul li a {
+  display: block;
+  color: rgb(92, 7, 161);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+        animation: flicker 1.5s infinite alternate;
+        border: 5px dashed rgba(112, 10, 160, 0.5);
+}
+
+.nav ul li a:hover {
+  background-color: #111111;
+}
+
+p {
+    color: #5c0da7;
+    text-align: center;
+    font-size: 10px;
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+        animation: flicker 1.5s infinite alternate;
+}
+
+.games li {
+    list-style-type: none;
+color: #ff0b0b;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    text-shadow:
+            0 0 5px rgb(251, 255, 0),
+            0 0 10px rgb(251, 255, 0),
+            0 0 20px rgb(251, 255, 0),
+            0 0 40px rgb(251, 255, 0),
+            0 0 80px rgb(251, 255, 0);
+        animation: flicker 1.5s infinite alternate;
+        margin-bottom: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+q {
+    color: #ff0b0b;
+    display: flex;
+    justify-content: center;
+        font-size: 10px;
+    font-weight: bold;
+    text-shadow:
+            0 0 5px rgb(251, 255, 0),
+            0 0 10px rgb(251, 255, 0),
+            0 0 20px rgb(251, 255, 0),
+            0 0 40px rgb(251, 255, 0),
+            0 0 80px rgb(251, 255, 0);
+        animation: flicker 1.5s infinite alternate;
+        border: 5px dashed rgba(255, 0, 0, 0.5);
+}
+
+form {
+   color: #ff0b0b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        font-size: 10px;
+    font-weight: bold;
+    text-shadow:
+            0 0 5px rgb(251, 255, 0),
+            0 0 10px rgb(251, 255, 0),
+            0 0 20px rgb(251, 255, 0),
+            0 0 40px rgb(251, 255, 0),
+            0 0 80px rgb(251, 255, 0);
+        animation: flicker 1.5s infinite alternate;
+
+}
+
+select {
+color: #ff0b0b;
+    display: flex;
+    justify-content: center;
+        font-size: 10px;
+    font-weight: bold;
+    text-shadow:
+            0 0 5px rgb(251, 255, 0),
+            0 0 10px rgb(251, 255, 0),
+            0 0 20px rgb(251, 255, 0),
+            0 0 40px rgb(251, 255, 0),
+            0 0 80px rgb(251, 255, 0);
+        animation: flicker 1.5s infinite alternate;
+        margin: 20px;
+}
+
+
+#form-email {
+    color: #8f0d79;
+    display: flex;
+flex-direction: column;
+    align-items: center;
+        font-size: 10px;
+    font-weight: bold;
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff;
+        animation: flicker 1.5s infinite alternate;
+        margin: 20px;
+}
+
+#label {
+    display: flex;
+    justify-content: center;
+        font-size: 10px;
+    font-weight: bold;
+     color: #5c0da7;
+    text-align: center;
+    font-size: 10px;
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+        animation: flicker 1.5s infinite alternate;
+        margin: 20px;
+}
+
+.retro-input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 15px;
+    margin: 10px 0 25px 0;
+
+    background-color: rgba(20, 20, 35, 0.85);
+    border: 2px solid #8f0d79;
+    border-radius: 4px;
+
+    color: #00ff00;
+    font-size: 11px;
+    font-family:'Press Start 2P',cursive;
+    outline: none;
+    box-sizing: border-box;
+
+    box-shadow: 0 0 8px rgba(143, 13, 121, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+.retro-input:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+}
+.retro-input option {
+    background-color: #141423;
+    color: #00ff00;
+}
+    
+.btn {
+--border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: 0.125em;
+  --curve-size: 0.5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+  cursor: pointer;
+  /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: 0.5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  clip-path: polygon(
+    /* Top-left */ 0% var(--curve-size),
+    var(--curve-size) 0,
+    /* top-right */ 100% 0,
+    100% calc(100% - var(--curve-size)),
+    /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+    /* bottom-right 2 */ 0 100%
+  );
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%;
+  }
+
+  50% {
+    background-position: 70% 100%;
+  }
+
+  100% {
+    background-position: 31% 0%;
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+    /* Top-left */ var(--border-width)
+      calc(var(--curve-size) + var(--border-width) * 0.5),
+    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+  );
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+    /* Top-left */ calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    calc(100% - var(--border-width)) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width))
+  );
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
+
+.contact {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    color: #ff0b0b;
+    display: flex;
+    justify-content: center;
+        font-size: 20px;
+    font-weight: bold;
+    text-shadow:
+            0 0 5px rgb(251, 255, 0),
+            0 0 10px rgb(251, 255, 0),
+            0 0 20px rgb(251, 255, 0),
+            0 0 40px rgb(251, 255, 0),
+            0 0 80px rgb(251, 255, 0);
+        animation: flicker 1.5s infinite alternate;
+}
+
+.contact a {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: #ff0b0b;
+    display: flex;
+    justify-content: center;
+        font-size: 20px;
+    font-weight: bold;
+    text-shadow:
+            0 0 5px rgb(251, 255, 0),
+            0 0 10px rgb(251, 255, 0),
+            0 0 20px rgb(251, 255, 0),
+            0 0 40px rgb(251, 255, 0),
+            0 0 80px rgb(251, 255, 0);
+        animation: flicker 1.5s infinite alternate;
+}
