@@ -3,23 +3,23 @@
 }
 
 body {
-    background: #554023;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #c99846, #554023);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #c99846, #554023); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* Nakładamy na siebie dwie warstwy: na górze liniowy gradient (od przezroczystego do brązu), a POD NIM Twoje zdjęcie kawy */
+    background: #554023;  
+background: -webkit-linear-gradient(to right, #c99846, #554023);  
+background: linear-gradient(to right, #c99846, #554023); 
+    
     background-image: 
         linear-gradient(to bottom, rgba(61, 35, 20, 0) 0%, rgba(61, 35, 20, 1) 80%),
         url("Coffee.jpg");
 
-    /* KLUCZ DO EFEKTU: Obrazek stoi sztywno w miejscu, a strona (teksty) przesuwa się nad nim */
+    
     background-attachment: scroll, fixed; 
 
-    /* Standardowe combo, żeby zdjęcie ładnie pokryło ekran i się nie powtarzało */
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
-    /* Dajemy dużą wysokość strony, żebyś na pewno miał co scrollować i zobaczył efekt */
+   
     min-height: 150vh; 
 font-family: "DynaPuff", system-ui;
 }
@@ -104,9 +104,9 @@ hr {
   #o-nas mark {
     color: #b66b0a;
     text-shadow: 0 0 5px #ffffff;
-    background: #554023;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #c99846, #554023);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #c99846, #554023); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #554023;  
+background: -webkit-linear-gradient(to right, #c99846, #554023);  
+background: linear-gradient(to right, #c99846, #554023); 
 margin-left: 4px;
 margin-right: 4px;
   }
@@ -118,31 +118,31 @@ margin-right: 4px;
 }
 
 table {
-    /* 1. KLUCZ: Skleja podwójne ramki w jedną, usuwa domyślne szpary */
+   
     border-collapse: collapse; 
     
-    /* 2. Zamiast grida do centrowania: automatyczne marginesy wyśrodkują tabelę */
+   
     margin: 20px auto; 
     
-    /* 3. Usuwamy całkowicie ramkę zewnętrzną tabeli */
+    
     border: none; 
 }
 
-/* Stylizujemy rzędy, żeby nie rozpychały się na boki */
+
 tr {
-    background: transparent; /* Wymuszamy przezroczystość, żeby nie było białych pasów */
+    background: transparent; 
 }
 
-/* 4. PRECYZYJNE CIĘCIE: Ramki dajemy TYLKO na komórki nagłówka i danych */
+
 th, td, caption {
-    padding: 10px 20px; /* Dajemy tekstowi trochę oddechu wewnątrz komórek */
-    color: #ffb366; /* Twój ładny, kawowy kolor tekstu */
+    padding: 10px 20px; 
+    color: #ffb366; 
     
-    /* Zamiast topornej klatki, robimy tylko delikatne linie pod produktami */
+    
     border: 1px solid rgba(255, 179, 102, 0.3); 
 }
 
-/* Opcjonalnie: usuwamy ostatnią linię na samym dole cennika */
+/* Optionally */
 /*tr:last-child td {
     border-bottom: none;
 }*/
